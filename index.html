@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumtaz App Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f0f0f5;
+        }
+        header {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        #logo {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 100px;
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        #myText {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+        #myButton {
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #myButton:hover {
+            background-color: #45a049;
+        }
+        @media screen and (max-width: 600px) {
+            header { font-size: 28px; }
+            #myText { font-size: 20px; }
+            #myButton { padding: 12px 30px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="logo">M</div>
+    <header>Mumtaz App Simulation</header>
+    <div id="myText">Hello Mumtaz!</div>
+    <button id="myButton">Click Me</button>
+
+    <script>
+        const text = document.getElementById('myText');
+        const button = document.getElementById('myButton');
+
+        button.addEventListener('click', function() {
+            text.textContent = "Button dab gaya!";
+        });
+    </script>
+
+</body>
+</html>
